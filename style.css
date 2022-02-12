@@ -1,0 +1,128 @@
+*,
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 16px;
+	--dark-blue-text-bold: #022529;
+	--dark-blue-text-reg: #074f57;
+	--accent-pink: #e4c5af;
+	--accent-pink-dark: #f0b489;
+	--accent-pink-light: #eeebe8;
+}
+
+body {
+	/* background-image: linear-gradient(
+		to bottom,
+		#077187,
+		#228a91,
+		#47a296,
+		#70b998,
+		#9ece9a
+	); */
+	/* background-repeat: no-repeat;
+	background-size: cover; */
+	background-color: var(--accent-pink);
+	font-family: "Montserrat", sans-serif;
+	color: var(--dark-blue-text-reg);
+	font-weight: 400;
+}
+
+#title {
+	color: var(--dark-blue-text-bold);
+	font-weight: 800;
+	margin-bottom: 5px;
+}
+h2 {
+	color: var(--dark-blue-text-bold);
+}
+
+header > p {
+	margin-bottom: 30px;
+	color: var(--dark-blue-text-reg);
+}
+
+.flex-center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#image {
+	max-width: 100%;
+	border-radius: 15px;
+	box-shadow: 5px 3px 20px 3px var(--accent-pink),
+		-5px -3px 20px 3px var(--accent-pink);
+}
+
+#main {
+	width: 80vw;
+	margin: 20px auto;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--accent-pink-light);
+	border-radius: 15px;
+}
+
+#main > p {
+	color: var(--dark-blue-text-bold);
+	font-weight: 600;
+	font-size: 18px;
+}
+
+#img-caption {
+	text-align: center;
+}
+
+span {
+	font-weight: 800;
+	margin-right: 15px;
+}
+
+#tribute-info {
+	width: 50%;
+	/* margin: 1em 5em; */
+	line-height: 2.5;
+	margin: 30px 0;
+}
+
+#tribute-link {
+	text-decoration: underline;
+	color: var(--accent-pink-dark);
+}
+
+@media only screen and (max-width: 1106px) {
+	#main {
+		width: 90vw;
+	}
+	#tribute-info {
+		width: 60%;
+	}
+}
+
+@media only screen and (max-width: 837px) {
+	#main {
+		width: 95vw;
+	}
+	#tribute-info {
+		width: 90%;
+	}
+}
+@media only screen and (max-width: 375px) {
+	#main {
+		width: 95vw;
+		font-size: 12px;
+		padding: 20px;
+	}
+	#tribute-info {
+		width: 90%;
+		line-height: 1.5;
+	}
+}
